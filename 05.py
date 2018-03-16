@@ -1,9 +1,10 @@
 def ngram(s, n):
-  print(s)
-  print(len(s))
-  print(type(s))
-  print(isinstance(s, str))
-  print(isinstance(s, list))
+  if isinstance(s, str):
+    for char in s:
+      print(char)
+  elif isinstance(s, list):
+    for i in s:
+      ngram(i, n)
 
 s = 'I am an NLPer'
 ngram(s, 2)
