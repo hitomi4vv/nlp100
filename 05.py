@@ -4,6 +4,8 @@ def ngram(s, n):
       ngram(i, n)
   elif isinstance(s, str):
     print(s)
+    for i in range(len(s)):
+      print(s[i:i+n])
 
 s = 'I am an NLPer'
 ngram(s, 2)
