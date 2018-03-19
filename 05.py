@@ -3,7 +3,6 @@ def ngram(s, n):
     for i in s:
       ngram(i, n)
   elif isinstance(s, str):
-    print(s)
     for i in range(len(s)):
       print(s[i:i+n])
 
