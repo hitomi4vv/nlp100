@@ -3,8 +3,11 @@ def ngram(s, n):
     for i in s:
       ngram(i, n)
   elif isinstance(s, str):
-    for i in range(len(s)):
-      print(s[i:i+n])
+    if len(s) <= n:
+      print(s)
+    else:
+      for i in range(len(s)):
+        print(s[i:i+n])
 
 s = 'I am an NLPer'
 ngram(s, 2)
