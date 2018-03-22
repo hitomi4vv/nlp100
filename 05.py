@@ -10,5 +10,6 @@ def ngram(s, n):
         print(s[i:i+n])
 
 s = 'I am an NLPer'
+
 ngram(s, 2)
 ngram(s.split(), 2)
