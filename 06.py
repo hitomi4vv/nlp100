@@ -1,13 +1,15 @@
 def ngram(s, n):
+  l = []
   if isinstance(s, list):
     for i in s:
       ngram(i, n)
   elif isinstance(s, str):
     if len(s) <= n:
-      print(s)
+      l.append(s)
     else:
       for i in range(len(s)):
-        print(s[i:i+n])
+        l.append(s[i:i+n])
+  return l
 
-ngram('paraparaparadise', 2)
-ngram('paragraph', 2)
+print(ngram('paraparaparadise', 2))
+print(ngram('paragraph', 2))
