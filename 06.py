@@ -11,10 +11,8 @@ def ngram(s, n):
         l.append(s[i:i+n])
   return l
 
-s = 'I am an NLPer'
-
-print(ngram(s, 2))
-print(ngram(s.split(), 2))
-
-print(ngram('paraparaparadise', 2))
-print(ngram('paragraph', 2))
+x = set(ngram('paraparaparadise', 2))
+y = set(ngram('paragraph', 2))
+print(x)
+print(y)
+print(x.union(y))
