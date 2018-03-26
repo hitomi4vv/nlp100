@@ -13,6 +13,4 @@ def ngram(s, n):
 
 x = set(ngram('paraparaparadise', 2))
 y = set(ngram('paragraph', 2))
-print(x)
-print(y)
-print(x.union(y))
+print('se' in x.union(y))
