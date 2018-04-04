@@ -1,6 +1,6 @@
 def cipher(s):
   for c in s:
-    print(c)
+    print(c.islower())
   return s
 
 def decipher(s):
