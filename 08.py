@@ -1,7 +1,7 @@
 def cipher(s):
   for c in s:
     if c.islower() and c.isalpha():
-      print(c)
+        print(219 - ord(c))
   return s
 
 def decipher(s):
