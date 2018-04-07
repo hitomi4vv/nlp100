@@ -6,7 +6,7 @@ def cipher(s):
 
 def decipher(s):
   for c in s:
-    print(c)
+    print(chr(219 + 118))
   return s
 
 print(cipher('Hello world!'))
