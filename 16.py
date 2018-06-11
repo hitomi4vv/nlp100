@@ -1,2 +1,2 @@
 with open('hightemp.txt') as f:
-  print(f.readlines())
+  print(list(zip(*[iter(f.readlines())]*10)))
