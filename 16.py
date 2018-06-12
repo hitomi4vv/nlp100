@@ -1,2 +1,3 @@
+import itertools
 with open('hightemp.txt') as f:
-  print(list(zip(*[iter(f.readlines())]*10)))
+  print(list(itertools.zip_longest(*[iter(f.readlines())]*10)))
