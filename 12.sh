@@ -1,1 +1,1 @@
-cat hightemp.txt | cut -f 1,2
+cut -f 1,2 hightemp.txt
