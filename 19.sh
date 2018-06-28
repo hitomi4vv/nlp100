@@ -1,1 +1,1 @@
-sort -k1 hightemp.txt
+sort -k1 | uniq -c | sort -r hightemp.txt
